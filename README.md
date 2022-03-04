@@ -63,7 +63,6 @@ flutter pub run easy_localization:generate -h
 
 flutter pub run easy_localization:generate -S "assets/translations" -O "lib/translations"
 
-flutter pub run easy_localization:generate -S "assets/translations" -O "lib/translations" -o "locale_keys.g.dart" -f keys
 ```
 
 > Update runapp via add
@@ -75,7 +74,9 @@ assetLoader: const CodegenLoader(),
 
 ```dart
              import 'package:easy_localization/easy_localization.dart'; for use tr()
-              LocaleKeys.nameThatYouGenerateIni18nManager.tr(),
+              Text(
+              'hi_text'.tr(),
+            ),
 ```
 > For change the language use
 
